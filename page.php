@@ -2,7 +2,7 @@
 /**
  * Page
  * 
- * @package jetwashing
+ * @package jetwashing 
  */
 get_header();
 ?>
