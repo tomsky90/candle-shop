@@ -2,7 +2,7 @@
 /**
  * Template for displaying the blog posts page
  * 
- * @package your-theme-name
+ * @package jetwashing
  */
 get_header();
 ?>

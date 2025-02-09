@@ -1,6 +1,6 @@
 <?php
 /**
- * @package tk-webdev
+ * @package jetwashing
  */
 
 error_reporting(0);

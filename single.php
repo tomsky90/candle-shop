@@ -2,7 +2,7 @@
 /**
  * The Template for displaying a single post
  * 
- * @package tk-webdev
+ * @package jetwashing
  */
 
 get_header();

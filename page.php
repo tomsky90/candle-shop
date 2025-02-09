@@ -2,7 +2,7 @@
 /**
  * Page
  * 
- * @package tk-webdev
+ * @package jetwashing
  */
 get_header();
 ?>
