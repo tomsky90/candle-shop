@@ -67,8 +67,13 @@
 
   &__contact-link {
     border-radius: 4px;
-    background: linear-gradient(to bottom, $light-blue, $blue);
+    background-color: $orange;
     padding: 10px 15px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $light-green;
+    }
   }
 
   .current-menu-item a {

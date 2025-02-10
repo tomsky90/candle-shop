@@ -21,9 +21,9 @@ body {
   transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
   border: none;
   border-radius: 4px;
-  background: linear-gradient(to bottom, $light-blue, $blue);
+  background-color: $orange;
   padding: 10px 15px;
-  color: white;
+  color: $white;
   font-weight: 800;
   font-size: 32px;
   text-decoration: none;
@@ -34,10 +34,6 @@ body {
 
   &:hover {
     cursor: pointer;
-    background: linear-gradient(
-      to bottom,
-      lighten($light-blue, 20%),
-      lighten($blue, 10%)
-    );
+    background-color: $light-green;
   }
 }
