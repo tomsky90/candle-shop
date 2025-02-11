@@ -1,11 +1,33 @@
 <section id="portfolio" class="portfolio">
-  <h2 class="portfolio__heading"><?php echo esc_html($attributes['work-example-heading']) ?></h2>
-  <div class="portfolio__section-wrapper">
-    <?php foreach ($attributes['work-example-examples'] as $example): ?>
-      <div class="portfolio__example-wrapper">
-        <img class="portfolio__img" src="<?php echo esc_url($example['work-example-img']['url']) ?>" alt="" />
-        <a class="cta-link portfoliio__link" href="<?php echo esc_url($example['work-example-link']) ?>">Live Site</a>
+  <div class="portfolio__wrapper">
+
+    <div class="portfolio__text-wrapper">
+      <div class="portfolio__text-tile portfolio__text-tile--left">
+        <h2 class="portfolio__heading"><?php echo esc_html($attributes['work-example-heading']) ?></h2>
+        <h3 class="portfolio__subheading"><?php echo esc_html($attributes['work-example-subheading']) ?></h3>
       </div>
-    <?php endforeach; ?>
+      <div class="portfolio__text-tile portfolio__text-tile--right">
+        <p class="portfolio__text"><?php echo esc_html($attributes['work-example-text']) ?></p>
+      </div>
+
+
+    </div>
+    <div class="portfolio__gallery">
+      <div class="portfolio__slider">
+        <div class="portfolio__slides">
+          <?php foreach ($attributes['work-example-gallery'] as $image): ?>
+            <?php if (isset($image['id'])): ?>
+
+              <?php echo wp_get_attachment_image($image['id'], 'large', false, array('class' => 'portfolio__slide')); ?>
+
+            <?php endif; ?>
+          <?php endforeach; ?>
+        </div>
+        <button class="portfolio__prev">&#10094;</button>
+        <button class="portfolio__next">&#10095;</button>
+      </div>
+    </div>
+
   </div>
+
 </section>

@@ -1,50 +1,37 @@
-const images = document.querySelectorAll(".gallery__image");
-const fullScreenImage = document.querySelector(".gallery__fullscreen-image");
-const fullScreenDisplay = document.querySelector(
-  ".gallery__fullscreen-background"
-);
-const closeFullscreenDisplay = document.querySelector(
-  ".gallery__fullscreen-close-btn"
-);
-const prevImageBtn = document.querySelector(".gallery__fullscreen-btn--prev");
-const nextImageBtn = document.querySelector(".gallery__fullscreen-btn--next");
+document.addEventListener("DOMContentLoaded", function () {
+  const slidesContainer = document.querySelector(".portfolio__slides");
+  const slides = document.querySelectorAll(".portfolio__slide");
+  const prevButton = document.querySelector(".portfolio__prev");
+  const nextButton = document.querySelector(".portfolio__next");
 
-if (
-  images.length > 0 &&
-  fullScreenImage &&
-  fullScreenDisplay &&
-  closeFullscreenDisplay &&
-  prevImageBtn &&
-  nextImageBtn
-) {
   let currentIndex = 0;
+  const totalSlides = slides.length;
+  let autoSlideInterval;
 
-  closeFullscreenDisplay.addEventListener("click", () => {
-    fullScreenDisplay.classList.remove("active");
-  });
+  function updateSlidePosition() {
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-  const showNextImage = () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    fullScreenImage.setAttribute("src", images[currentIndex].src);
-  };
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+    resetAutoSlide();
+  }
 
-  const showPrevImage = () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    fullScreenImage.setAttribute("src", images[currentIndex].src);
-  };
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+    resetAutoSlide();
+  }
 
-  const showImage = (src, i) => {
-    currentIndex = i;
-    fullScreenImage.setAttribute("src", src);
-    fullScreenDisplay.classList.add("active");
-  };
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextSlide, 3000); // Restart auto-slide
+  }
 
-  images.forEach((image, i) => {
-    image.addEventListener("click", () => {
-      showImage(image.src, i);
-    });
-  });
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
 
-  nextImageBtn.addEventListener("click", showNextImage);
-  prevImageBtn.addEventListener("click", showPrevImage);
-}
+  // Start Auto Slide
+  autoSlideInterval = setInterval(nextSlide, 3000);
+});
