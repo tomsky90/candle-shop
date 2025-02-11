@@ -9,7 +9,7 @@
     @include container;
 
     @include view(mobile) {
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 100px;
     }
   }
@@ -23,7 +23,12 @@
 
     @include view(tablet) {
       flex-direction: column;
+
       align-items: center;
+    }
+
+    @include view(mobile) {
+      flex-direction: column-reverse;
     }
   }
 
@@ -53,38 +58,23 @@
   &__heading {
     position: relative;
 
-    margin-bottom: 150px;
-    width: 100%;
-    color: $white;
+    margin-bottom: 15px;
+
+    color: $light-green;
     font-weight: bold;
-    font-size: 36px;
-    text-align: center;
+    font-size: 26px;
 
     @include view(mobile) {
-      margin-bottom: 100px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 24px;
     }
+  }
 
-    &::after {
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -100;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 50%);
-      background-color: $purple;
-      width: 20%;
-      height: 119px;
-      content: "";
-
-      @include view(tablet) {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 40%);
-        width: 30%;
-      }
-      @include view(mobile) {
-        width: 50%;
-      }
-    }
+  &__subheading {
+    margin-bottom: 30px;
+    color: $green;
+    font-size: 36px;
   }
 
   &__img-wrapper {
@@ -95,6 +85,7 @@
     }
 
     @include view(mobile) {
+      margin-top: 30px;
       width: 100%;
     }
   }
@@ -108,5 +99,40 @@
     @include view(mobile) {
       height: 300px;
     }
+  }
+
+  &__features-container {
+    display: flex;
+    column-gap: 30px;
+    padding-top: 20px;
+
+    @include view(mobile) {
+      row-gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &__feature {
+    border-radius: 8px;
+    background-color: $green;
+    padding: 30px;
+    color: $white;
+
+    &--right {
+      background-color: $light-green;
+    }
+  }
+
+  &__feature-heading {
+    font-size: 36px;
+  }
+
+  &__feature-subheading {
+    font-size: 20px;
+  }
+
+  &__feature-text {
+    margin-top: 20px;
+    font-size: 18px;
   }
 }
