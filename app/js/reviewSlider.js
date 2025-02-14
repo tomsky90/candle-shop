@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navButtons.length === 0) return;
 
   let currentSlide = 0;
+  const totalSlides = navButtons.length;
 
   const updateSlider = () => {
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -21,8 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       currentSlide = index;
       updateSlider();
+      resetAutoSlide();
     });
   });
+
+  const nextSlide = () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  };
+
+  let autoSlideInterval = setInterval(nextSlide, 3000);
+
+  const resetAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextSlide, 3000);
+  };
 
   updateSlider();
 });
