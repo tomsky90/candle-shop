@@ -1,0 +1,88 @@
+.services-section {
+  padding: 100px 0;
+  @include container;
+
+  &__heading {
+    position: relative;
+    margin-bottom: 150px;
+    width: 100%;
+    color: $light-green;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+
+    @include view(mobile) {
+      font-size: 24px;
+    }
+  }
+
+  &__tile {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 100px;
+
+    @include view(tablet) {
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__tile:nth-of-type(even) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include view(tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__tile-img-wrapper {
+    width: 50%;
+
+    @include view(tablet) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  &__tile-img {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  &__tile-text-wrapper {
+    width: 50%;
+
+    @include view(tablet) {
+      width: 100%;
+    }
+  }
+
+  &__tile-heading {
+    margin-bottom: 10px;
+    color: $green;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  &__benefits-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: $green;
+    font-weight: 600px;
+    font-size: 24px;
+  }
+
+  &__benefit-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__benefit {
+    margin-bottom: 10px;
+  }
+
+  &__done-icon {
+    margin-right: 10px;
+  }
+}
