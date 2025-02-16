@@ -20,12 +20,13 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
+    justify-content: flex-start;
     margin-top: 50px;
   }
 
   &__item {
     margin-bottom: 15px;
-    width: 50%;
+    width: 33%;
     color: $green;
     font-weight: 600;
     font-size: 24px;
