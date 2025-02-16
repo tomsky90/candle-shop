@@ -6,7 +6,7 @@
     <div class="footer__links-wrapper">
       <a href="./home">
         <img loading="lazy" class="footer__logo"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/Logo.webp" alt="footer logo" />
+          src="<?php echo get_template_directory_uri() ?>/assets/images/logo1.webp" alt="footer logo" />
       </a>
     </div>
     <div class="footer__links-wrapper">
@@ -17,15 +17,15 @@
       <div class="footer__link-wrapper">
         <img class="footer__link-icon" src="<?php echo get_template_directory_uri() ?>/assets/images/Email.webp"
           alt="mail" />
-        <a class="footer__link" href="mailto:hello@tk-webdev.com">
-          hello@tk-webdev.com
+        <a class="footer__link" href="mailto:hello@wirraljetwashing.com">
+          hello@wirraljetwashing.com
         </a>
       </div>
     </div>
     <div class="footer__links-wrapper">
       <h3 class="footer__heading">About</h3>
       <div class="footer__link-wrapper">
-        I’m a freelance web designer based on the Wirral, specializing in creating professional websites.
+        We are wirral jetwashing and we serve customers around wirral for all they cleaning needs
       </div>
 
     </div>

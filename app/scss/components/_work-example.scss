@@ -7,16 +7,12 @@
   &__heading {
     margin-bottom: 20px;
     color: $light-green;
-    font-size: 34px;
-
-    @include view(mobile) {
-      font-size: 24px;
-    }
+    font-size: 24px;
   }
 
   &__subheading {
     color: $white;
-    font-size: 44px;
+    font-size: 36px;
   }
 
   &__wrapper {
@@ -45,7 +41,6 @@
   &__text {
     margin-left: 40px;
     color: $white;
-    font-size: 24px;
 
     @include view(mobile) {
       margin-top: 20px;
