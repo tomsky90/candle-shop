@@ -5,14 +5,14 @@
   <h3 class="reviews__subheading"><?php echo esc_html($attributes['reviews-subheading']) ?></h3>
   <div class="reviews__features-container">
     <div class="reviews__feature home-about__feature--left">
-      <h4 class="reviews__feature-heading">5+</h4>
+      <h4 class="reviews__feature-heading"><span class="counter" data-target="5">0</span>+</h4>
       <p class="reviews__feature-subheading">Years of experience</p>
       <p class="reviews__feature-text">We have over five years of proffesional experience</p>
     </div>
     <div class="reviews__feature reviews__feature--right">
-      <h4 class="reviews__feature-heading">100+</h4>
-      <p class="reviews__feature-subheading">Happy customers</p>
-      <p class="reviews__feature-text">We have served more than 100 happy customers</p>
+      <h4 class="reviews__feature-heading"><span class="counter" data-target="150">0</span>+</h4>
+      <p class="reviews__feature-subheading">Five stars reviews</p>
+      <p class="reviews__feature-text">We have over 150 five stars reviews </p>
     </div>
   </div>
   <div class="reviews__wrapper">

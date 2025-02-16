@@ -26,12 +26,12 @@
 
         <div class="home-about__features-container">
           <div class="home-about__feature home-about__feature--left">
-            <h4 class="home-about__feature-heading">5+</h4>
+            <h4 class="home-about__feature-heading "><span class="counter" data-target="5">0</span>+</h4>
             <p class="home-about__feature-subheading">Years of experience</p>
             <p class="home-about__feature-text">We have over five years of proffesional experience</p>
           </div>
           <div class="home-about__feature home-about__feature--right">
-            <h4 class="home-about__feature-heading">100+</h4>
+            <h4 class="home-about__feature-heading "><span class="counter" data-target="200">0</span>+</h4>
             <p class="home-about__feature-subheading">Happy customers</p>
             <p class="home-about__feature-text">We have served more than 100 happy customers</p>
           </div>
