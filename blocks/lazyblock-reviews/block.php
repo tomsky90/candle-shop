@@ -47,7 +47,7 @@
     </div>
     <div class="reviews__nav-wrapper">
       <?php for ($i = 0; $i < $reviews_number; $i++) {
-        echo '<button class="reviews__nav-btn"></button>';
+        echo '<button aria-label="Go to slide" class="reviews__nav-btn"></button>';
       } ?>
     </div>
   </div>

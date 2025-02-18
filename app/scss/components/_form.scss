@@ -1,13 +1,13 @@
-.wpcf7-form {
+.wpcf7 {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .wpcf7-form .ajax-loader {
-  display: none !important; /* Hides the spinner */
+  display: none !important;
 }
 
 .wpcf7-spinner {
@@ -19,7 +19,7 @@
 
   &__input {
     margin-bottom: 20px;
-    border: 2px solid $purple;
+    border: 2px solid $green;
     border-radius: 4px;
     padding: 5px 15px;
 
@@ -28,7 +28,17 @@
     }
 
     &:focus {
-      outline: 2px solid $light-blue;
+      outline: 2px solid $light-green;
     }
+  }
+
+  &__submit-btn {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background-color: $light-green;
+    padding: 10px 15px;
+    min-width: 100px;
+    color: $white;
   }
 }
