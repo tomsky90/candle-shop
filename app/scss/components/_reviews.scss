@@ -158,6 +158,10 @@
     width: 50%;
     color: $white;
 
+    @include view(mobile) {
+      width: 100%;
+    }
+
     &--right {
       background-color: $light-green;
 

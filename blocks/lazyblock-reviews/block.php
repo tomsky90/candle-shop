@@ -24,7 +24,8 @@
 
       <?php foreach ($attributes['reviews'] as $review): ?>
         <div class='reviews__review-wrapper'>
-          <img class="reviews__quote" src="<?php echo get_template_directory_uri(); ?>/assets/images/quote.webp" alt=''>
+          <img loading="lazy" class="reviews__quote"
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/quote.webp" alt=''>
           <div class="reviews__image-wrapper">
             <?php if (isset($review['reviews-image']['id'])): ?>
               <?php
@@ -35,8 +36,8 @@
             <?php endif; ?>
           </div>
           <div class="reviews__text-wrapper">
-            <img class="reviews__stars" src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.webp"
-              alt='Five stars'>
+            <img loading="lazy" class="reviews__stars"
+              src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.webp" alt='Five stars'>
             <p class="reviews__text"><?php echo esc_html($review['reviews-text']) ?></p>
             <p class="reviews__text"><?php echo esc_html($review['reviews-author']) ?></p>
           </div>

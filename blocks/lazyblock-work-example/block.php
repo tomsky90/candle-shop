@@ -18,7 +18,7 @@
           <?php foreach ($attributes['work-example-gallery'] as $image): ?>
             <?php if (isset($image['id'])): ?>
 
-              <?php echo wp_get_attachment_image($image['id'], 'large', false, array('class' => 'portfolio__slide')); ?>
+              <?php echo wp_get_attachment_image($image['id'], 'large', false, ['class' => 'portfolio__slide']); ?>
 
             <?php endif; ?>
           <?php endforeach; ?>

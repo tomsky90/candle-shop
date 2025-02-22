@@ -20,7 +20,7 @@
       <?php endif; ?>
     </div>
 
-    <a class="cta-link " target="blank" href="#contact">Contact Me</a>
+    <a class="cta-link " target="blank" href="<?php echo esc_url($attributes['banner-cta']) ?>">Contact Me</a>
 
 
   </div>
