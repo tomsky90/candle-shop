@@ -12,8 +12,7 @@
           <p class="services__tile-text"><?php echo esc_html($tile['service-text']) ?></p>
 
 
-          <a target="blank" href="<?php echo esc_url($attributes['services-link']) ?>"
-            class="services__link cta-link">Read
+          <a target="blank" href="<?php echo esc_url($tile['services-link']) ?>" class="services__link cta-link">Read
             More</a>
 
 
