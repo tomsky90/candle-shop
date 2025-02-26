@@ -2,7 +2,7 @@
 /**
  * Template for displaying the blog posts page
  * 
- * @package jetwashing
+ * @package candlesshop
  */
 get_header();
 ?>

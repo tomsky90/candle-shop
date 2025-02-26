@@ -2,7 +2,7 @@
 /**
  * The Template for displaying a single post
  * 
- * @package jetwashing
+ * @package candles-shop
  */
 
 get_header();

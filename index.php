@@ -1,6 +1,6 @@
 <?php
 /**
- * @package jetwashing
+ * @package candlesshop
  */
 get_header();
 ?>

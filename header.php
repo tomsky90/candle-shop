@@ -4,46 +4,27 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Web Design Wirral | TK Websites - Freelance Web Designer & Developer</title>
+	<title>Home Made Candles</title>
 
-	<meta name="description"
-		content="Looking for expert web design in Wirral? TK Websites creates custom, responsive websites for businesses. Specializing in WordPress, UX/UI design, and professional web development.">
+	<meta name="description" content="We make all our candles with great care">
 
-	<meta name="keywords"
-		content="web design Wirral, freelance web developer Wirral, web designer Wirral, Wirral web development, professional web design Wirral, responsive web design Wirral, WordPress developer Wirral, UX/UI designer Wirral, business website Wirral">
+	<meta name="keywords" content="candles, scents, home decor">
 
 
 	<!-- Open Graph Metadata -->
-	<meta property="og:title" content="Web Design Wirral | TK Websites - Freelance Web Designer & Developer" />
-	<meta property="og:description"
-		content="Freelance web developer and designer in Wirral, UK. Creating custom, responsive websites tailored to your business needs. Specializing in WordPress and UX/UI design." />
-	<meta property="og:url" content="https://tk-webdev.com/" />
+	<meta property="og:title" content="We make all our candles with great care" />
+	<meta property="og:description" content="We make all our candles with great care" />
+	<meta property="og:url" content="" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://wirrallandscaping.tk-webdev.com/assets/images/logo.webp" />
+	<meta property="og:image" content="" />
 
 	<!-- Twitter Card Metadata -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Web Design Wirral | TK Websites - Freelance Web Designer & Developer">
-	<meta name="twitter:description"
-		content="Freelance web developer and designer in Wirral, UK. Custom, responsive websites tailored to your business needs. Specializing in WordPress, UX/UI design, and professional web design.">
-	<meta name="twitter:image" content="https://wirrallandscaping.tk-webdev.com/assets/images/logo.webp">
+	<meta name="twitter:title" content="We make all our candles with great care">
+	<meta name="twitter:description" content="We make all our candles with great care">
+	<meta name="twitter:image" content="">
 
-	<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "WebSite",
-	"name": "TK Websites",
-	"url": "https://tk-webdev.com/",
-	"description": "Web design Wirral – Custom, responsive websites for businesses. WordPress & UX/UI expert.",
 
-	"address": {
-		"@type": "PostalAddress",
-		"addressLocality": "Wirral",
-		"addressRegion": "Merseyside",
-		"addressCountry": "UK"
-	}
-}
-</script>
 
 
 

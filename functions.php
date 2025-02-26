@@ -1,6 +1,6 @@
 <?php
 /**
- * @package jetwashing
+ * @package candles-shop
  */
 
 error_reporting(0);
@@ -10,6 +10,12 @@ if (!defined('_S_VERSION')) {
 }
 
 require_once 'inc/menus.php';
+
+function moj_sklep_wspiera_woocommerce()
+{
+    add_theme_support('woocommerce');
+}
+add_action('after_setup_theme', 'moj_sklep_wspiera_woocommerce');
 
 
 add_theme_support('post-thumbnails');
