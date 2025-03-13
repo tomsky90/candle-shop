@@ -17,6 +17,18 @@ function moj_sklep_wspiera_woocommerce()
 }
 add_action('after_setup_theme', 'moj_sklep_wspiera_woocommerce');
 
+function dodaj_swiper_assets()
+{
+    // Dodanie stylów Swiper.js
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+
+    // Dodanie skryptu Swiper.js
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), null, true);
+
+
+}
+add_action('wp_enqueue_scripts', 'dodaj_swiper_assets');
+
 
 add_theme_support('post-thumbnails');
 function init_scripts()
@@ -52,6 +64,8 @@ function remove_admin_bar_bump()
 add_action('get_header', 'remove_admin_bar_bump');
 
 add_filter('get_custom_logo', 'change_logo_class');
+
+
 
 
 function change_logo_class($html)

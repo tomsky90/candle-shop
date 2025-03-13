@@ -7,7 +7,7 @@
 }
 
 .nav {
-  background-color: transparent;
+  background-color: $grey;
   padding: 20px 0;
 
   &__container {
@@ -51,7 +51,7 @@
   }
 
   &__link a {
-    color: $white;
+    color: $black;
     font-weight: 600;
     font-size: 24px;
     text-decoration: none;
