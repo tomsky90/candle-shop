@@ -1,0 +1,69 @@
+.woocommerce.columns-4 {
+  margin-top: 80px;
+}
+
+/* Style individual product items */
+.products .product {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Hover effect for products */
+.products .product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Style product images */
+.products .product img {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: auto;
+}
+
+/* Style product titles */
+.products .product .woocommerce-loop-product__title {
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Style the price */
+.products .product .price {
+  padding: 10px;
+  color: #0073e6;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Add a button style for the add-to-cart button */
+.products .product .button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: $black;
+  padding: 10px 15px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.products .product .button:hover {
+  background-color: $white;
+  color: $black;
+}
+
+.best-sellers-heading {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}

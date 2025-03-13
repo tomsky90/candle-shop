@@ -17,6 +17,10 @@
 .banner .swiper-wrapper {
   margin-top: 120px;
   width: 100%;
+
+  @include view(mobile) {
+    margin-top: 0;
+  }
 }
 
 /* Każdy slajd zajmuje 100% szerokości */
@@ -54,6 +58,10 @@
   font-size: 100px;
   letter-spacing: 20px;
   text-transform: uppercase;
+
+  @include view(mobile) {
+    font-size: 65px;
+  }
 }
 
 /* Nawigacja slidera */
