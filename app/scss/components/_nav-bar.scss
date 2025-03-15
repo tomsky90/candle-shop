@@ -57,22 +57,11 @@
     text-decoration: none;
 
     &:hover {
-      border-bottom: $white 2px solid;
+      border-bottom: $black 2px solid;
     }
 
     @include view(mobile) {
       display: inline-block;
-    }
-  }
-
-  &__contact-link {
-    border-radius: 4px;
-    background-color: $orange;
-    padding: 10px 15px;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $light-green;
     }
   }
 

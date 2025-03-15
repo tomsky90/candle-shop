@@ -1,4 +1,3 @@
-/* Kontener banera ustawiony na pełną szerokość */
 .banner {
   margin: 0;
   padding: 0;
@@ -6,14 +5,12 @@
   overflow: hidden;
 }
 
-/* Slider ustawiony na pełną szerokość i wysokość viewportu */
 .banner .swiper {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
-/* Upewnij się, że wrapper slidera też zajmuje 100% szerokości */
 .banner .swiper-wrapper {
   margin-top: 120px;
   width: 100%;
@@ -23,7 +20,6 @@
   }
 }
 
-/* Każdy slajd zajmuje 100% szerokości */
 .banner .swiper-slide {
   justify-content: center;
   align-items: center;
@@ -33,7 +29,6 @@
   text-align: center;
 }
 
-/* Opcjonalnie – ustawienia tekstu */
 .banner__text-wrapper {
   position: absolute;
   top: 50%;
@@ -44,10 +39,14 @@
   width: 100%;
   max-width: 600px;
   color: #fff;
+
   text-align: center;
 }
 
-/* Obrazy w slajdach */
+.banner__text {
+  font-family: tuesday_nightregular, sans-serif;
+}
+
 .banner__img-wrapper img {
   width: 100%;
   height: 100vh;
@@ -64,7 +63,6 @@
   }
 }
 
-/* Nawigacja slidera */
 .swiper-pagination {
   bottom: 10px;
 }
