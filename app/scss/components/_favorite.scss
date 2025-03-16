@@ -1,0 +1,60 @@
+.favorite {
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+  @include container;
+  padding-bottom: 200px;
+
+  @include view(tablet) {
+    column-gap: 10px;
+  }
+
+  @include view(mobile) {
+    flex-direction: column;
+  }
+
+  &__tile {
+    width: 50%;
+
+    @include view(mobile) {
+      width: 100%;
+    }
+
+    &--text {
+      text-align: center;
+      @include view(mobile) {
+        margin-top: 200px;
+      }
+    }
+  }
+
+  &__img1 {
+    @include view(mobile) {
+      width: 70%;
+    }
+  }
+
+  &__img2 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 25%;
+
+    @include view(mobile) {
+      top: 20%;
+      left: 25%;
+      z-index: 10;
+      width: 70%;
+    }
+  }
+
+  &__text-img {
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
