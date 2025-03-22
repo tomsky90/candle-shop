@@ -6,7 +6,7 @@
     <div class="footer__links-wrapper">
       <a href="./home">
         <img loading="lazy" class="footer__logo"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/logo1.webp" alt="footer logo" />
+          src="<?php echo get_template_directory_uri() ?>/assets/images/new-logo.webp" alt="footer logo" />
       </a>
     </div>
     <div class="footer__links-wrapper">
@@ -32,7 +32,7 @@
     <div class="footer__links-wrapper">
       <h3 class="footer__heading">Links</h3>
       <ul class="footer__nav">
-        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#home">Home</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://home">Home</a></li>
         <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#about">About</a></li>
         <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#services">Services</a>
         </li>

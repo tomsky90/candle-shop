@@ -81,10 +81,17 @@
   &__tile-wrapper {
     display: flex;
     margin-bottom: 40px;
+    @include view(mobile) {
+      flex-wrap: wrap;
+    }
   }
 
   &__tile-img-wrapper {
     margin-right: 40px;
+
+    @include view(mobile) {
+      margin-right: 20px;
+    }
   }
 
   &__tile-img {
@@ -94,6 +101,12 @@
   }
 
   &__tile-heading {
+    margin-bottom: 10px;
+    font-size: 24px;
     text-transform: uppercase;
+  }
+
+  &__tile-text {
+    font-size: 16px;
   }
 }
