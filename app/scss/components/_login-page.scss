@@ -1,0 +1,73 @@
+.site h1 {
+  display: none;
+}
+
+.woocomerce-form-wrapper {
+  @include container;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.site-main,
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+  @include container;
+}
+
+.woocommerce-MyAccount-navigation {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.woocommerce-form-login {
+  margin: 0 auto;
+  width: 40%;
+  @include view(mobile) {
+    width: 100%;
+  }
+}
+
+/* Style individual columns */
+.u-column1,
+.u-column2 {
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+/* Form headings */
+#customer_login h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Input fields */
+.woocommerce-form input.input-text {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Login and Register buttons */
+.woocommerce-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #0073aa;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+.woocommerce-button:hover {
+  background: #005b87;
+}
+
+/* Lost password link */
+.woocommerce-LostPassword {
+  text-align: center;
+}

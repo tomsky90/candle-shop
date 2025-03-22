@@ -1,12 +1,6 @@
 .woocommerce.columns-4 {
   margin-top: 80px;
-  margin-right: 50px;
-  margin-left: 50px;
-
-  @include view(mobile) {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
+  @include container;
 }
 
 .woocommerce ul.products[class*="columns-"] li.product,

@@ -1,9 +1,5 @@
 .top-navigation {
-  position: absolute;
   width: 100%;
-  @include view(mobile) {
-    margin-bottom: 50px;
-  }
 }
 
 .nav {
