@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.my-account-wrapper {
+  @include container;
+  padding-top: 100px;
+}
+
 /* Welcome Header */
 .custom-account-header h2 {
   margin-bottom: 10px;
