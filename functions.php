@@ -77,3 +77,26 @@ function change_logo_class($html)
     return $html;
 }
 
+
+function custom_woocommerce_shop_header()
+{
+    ?>
+    <div class="shop-header">
+        <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
+            <input type="search" class="search-field" placeholder="Search products…"
+                value="<?php echo get_search_query(); ?>" name="s" />
+            <input type="hidden" name="post_type" value="product" />
+            <button type="submit">Search</button>
+        </form>
+
+        <?php if (is_active_sidebar('woocommerce-filters')): ?>
+            <div class="shop-filters">
+                <?php dynamic_sidebar('woocommerce-filters'); ?>
+            </div>
+        <?php endif; ?>
+    </div>
+    <?php
+}
+add_action('woocommerce_shop_loop_header', 'custom_woocommerce_shop_header', 5); // Priority 5 to make it appear first
+
+
