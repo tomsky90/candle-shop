@@ -12,6 +12,7 @@
   height: 100vh;
   @include view(mobile) {
     margin-top: 0;
+    height: 80vh;
   }
 }
 
