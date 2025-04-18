@@ -32,11 +32,11 @@
     <div class="footer__links-wrapper">
       <h3 class="footer__heading">Links</h3>
       <ul class="footer__nav">
-        <li class='footer__link-wrapper'><a class="footer__link" href="https://home">Home</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="https://">Shop</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#services">Cart</a>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://">Home
+        <li class='footer__link-wrapper'><a class=" footer__link" href="https://http://candle-shop.local/shop/">Shop
+        <li class='footer__link-wrapper'><a class="footer__link" href="http://candle-shop.local/cart/">Cart
         </li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#prices">My Account</a>
+        <li class='footer__link-wrapper'><a class="footer__link" href="http://candle-shop.local/my-account/">My Account
         </li>
 
 
